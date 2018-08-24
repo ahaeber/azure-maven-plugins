@@ -20,6 +20,8 @@ public class TimerBinding extends BaseBinding {
         super(timerTrigger.name(), TIMER_TRIGGER, Direction.IN, timerTrigger.dataType());
 
         schedule = timerTrigger.schedule();
+        
+        runOnStartup = timerTrigger.runOnStartup();
     }
 
     @JsonGetter
